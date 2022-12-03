@@ -1,3 +1,7 @@
+// THIS FILE DOESNT DO ANYTHING
+
+// contentScript can do stuff the the DOM
+
 (() => {
   const newUrlLoaded = async () => {
     console.log("new url loaded");
