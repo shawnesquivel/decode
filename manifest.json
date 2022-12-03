@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "author": "Abby Hayashi",
   "description": "This chrome extension helps you make better decisions about your clothes",
-  "permissions": ["storage", "tabs", "extensions"],
+  "permissions": ["storage", "tabs", "activeTab"],
   "background": {
-    "service_worker": "background.js",
-    "scripts": ["js/background.js", "js/jquery-1.10.2.js"]
+    "service_worker": "js/background.js"
   },
   "content_scripts": [
     {
@@ -15,17 +14,6 @@
         "https://*.urbanoutfitters.com/en-ca/shop/iets-frans-balloon-cargo-pant?category=shop-all-gifts&color=020&type=REGULAR&quantity=1"
       ],
       "js": ["contentScript.js"]
-    }
-  ],
-  "web_accessible_resources": [
-    {
-      "resources": [
-        "assets/bookmark.png",
-        "assets/play.png",
-        "assets/delete.png",
-        "assets/save.png"
-      ],
-      "matches": ["https://*.youtube.com/*"]
     }
   ],
   "action": {
