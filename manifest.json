@@ -6,7 +6,7 @@
   "permissions": ["storage", "tabs", "extensions"],
   "background": {
     "service_worker": "background.js",
-    "scripts": []
+    "scripts": ["js/background.js", "js/jquery-1.10.2.js"]
   },
   "content_scripts": [
     {

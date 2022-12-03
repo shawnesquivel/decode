@@ -3,17 +3,17 @@ const header = document.querySelector(".target");
 
 header.innerText = "Clothing Materials";
 
-let xpath = "//a[text()='cotton']";
+// let xpath = "//a[text()='cotton']";
 
-let matchingElement = document.evaluate(
-  xpath,
-  document,
-  null,
-  XPathResult.FIRST_ORDERED_NODE_TYPE,
-  null
-).singleNodeValue;
+// let matchingElement = document.evaluate(
+//   xpath,
+//   document,
+//   null,
+//   XPathResult.FIRST_ORDERED_NODE_TYPE,
+//   null
+// ).singleNodeValue;
 
-console.log(matchingElement);
+// console.log(matchingElement);
 
 for (const li of document.querySelectorAll("li")) {
   const searchTerm = "cotton";
