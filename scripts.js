@@ -103,6 +103,30 @@ if (pageTitle === "Sustainable Clothing Tool") {
 
 // export { resultsPageData };
 
-if (pageTitle === "Home") {
-  console.log("We're on the home page");
+if (pageTitle === "Sustainable Clothing Manual Search") {
+  console.log("Sustainable Clothing Manual Search");
+  const homeBtn = document.querySelector(".home__btn");
+  console.log(homeBtn);
+  const clothingTypeInput = document.getElementById("clothing-type-input");
+  const brandInput = document.getElementById("brand-input");
+  const materialsInput = document.getElementById("materials-input");
+  const weightInput = document.getElementById("weight-input");
+  // grab the form data
+  homeBtn.addEventListener("click", async (e) => {
+    e.preventDefault();
+    console.log(clothingTypeInput.value);
+    console.log(brandInput.value);
+    console.log(materialsInput.value);
+    console.log(weightInput.value);
+
+    const results = await fetch(
+      "https://638b8a0e7220b45d2292679a.mockapi.io/results"
+    )
+      .then((res) => {
+        console.log(res);
+        return res.json();
+      })
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
+  });
 }

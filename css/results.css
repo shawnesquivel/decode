@@ -621,3 +621,259 @@ ul > li a:visited {
   cursor: pointer;
   background-color: var(--green);
 }
+
+/* About Page */
+
+.find-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 0;
+}
+
+ul {
+  list-style: none;
+}
+ul > li > a {
+  text-decoration: none;
+}
+
+ul > li a:visited {
+  text-decoration: none;
+}
+
+/*  */
+
+.inline-text-img-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.about-text-img {
+  width: 456px;
+  height: 92px;
+}
+
+.inline-text-small-text {
+  display: inline-block;
+  /* position: relative; */
+  /* vertical-align: top; */
+  white-space: normal;
+  max-width: 456px;
+  /* top: 14px; */
+  font-size: 15px;
+  line-height: 1.1em;
+}
+
+.inline-text-info {
+  display: block;
+  flex: 1 1 auto;
+  margin: 50px 120px;
+}
+
+.cream-block {
+  background-color: #f9f7f1;
+}
+
+.pink-block {
+  background-color: #dbcabd;
+}
+
+.blue-block {
+  background-color: #d6e0db;
+}
+
+.why-labels {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 120px;
+  padding: 120px 0px;
+  align-items: center;
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 65%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.flex-column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 120px;
+  gap: 50px;
+}
+
+.flex-column-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h3 {
+  font-family: "Monarcha";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 41px;
+  color: #141817;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: #141817;
+}
+
+.half-flex {
+  display: flex;
+  margin: 0px 120px;
+  align-items: center;
+  margin: 0px 120px;
+}
+
+.half-flex-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 30px;
+  padding: 0px 30px 0px 0px;
+  /* padding: 0px 20px; */
+}
+
+.half-flex-right {
+  width: 50%;
+}
+
+.app-features {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 44px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid #141817;
+  border-radius: 33px;
+  width: 286px;
+  height: 192px;
+  padding: 16px;
+  gap: 8px;
+}
+.app-features-header {
+  width: 100%;
+  justify-content: left;
+  display: block;
+}
+
+.bullet li {
+  list-style-image: url(../images/Star_1.png);
+  padding-inline-start: 1ch;
+}
+
+h4 {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+}
+
+/* Home Page */
+
+h5 {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+h6 {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 39px;
+  gap: 8px;
+  width: 510px;
+  height: 52px;
+  border: 1px solid #141817;
+  border-radius: 42px;
+  background-color: #fdfdfa;
+}
+
+.search-bar-flex {
+  display: flex;
+  width: 100%;
+}
+
+.submit-home {
+  width: 30%;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  height: 52px;
+  justify-content: center;
+  border: 1px solid #141817;
+  border-left: 0px;
+  background-color: #d6e0db;
+}
+
+.input-search {
+  width: 70%;
+  max-height: 52px;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  background-color: #fdfdfa;
+  border: 1px solid #141817;
+  padding: 10px 16px;
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6d7472;
+}
+
+.div-50 {
+  height: 50px;
+}

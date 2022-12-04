@@ -18,7 +18,8 @@
   ],
   "action": {
     "default_title": "Sustainable Clothing Tool",
-    "default_popup": "index.html"
+    "default_popup": "index.html",
+    "default_icon": "favicon.png"
   },
   "manifest_version": 3
 }

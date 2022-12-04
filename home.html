@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link rel="icon" href="./images/favicon.png" />
+
     <link rel="stylesheet" href="./css/results.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,194 +32,61 @@
       </div>
     </nav>
 
-    <div class="results">
-      <h2 class="results__heading">Results</h2>
+    <!-- Insert Data Based on Sustainability Rating -->
+    <div class="inline-text-info">
+      <h1 class="results__is-sustainable">
+        WE
+        <span class=".inline-text-img-wrapper">
+          <img src="./images/Rectangle_11.png" alt="" />
+        </span>
+        DECODE GREENWASHING
+        <span class=".inline-text-img-wrapper">
+          <img src="./images/Rectangle_12.png" alt="" />
+        </span>
+        ON CLOTHING LABELS.
+      </h1>
+      <div class="inline-text-small-text">
+        Buying sustainably just got easier. We find information about the care
+        and textile of the clothing so you can shop with sustainability in mind.
+        With our tool, you can find clothes that look and feel good.
+        <a href="#">LEARN MORE <img src="./images/Arrow 1" alt="" /> </a>
+      </div>
 
-      <!-- Insert Data Based on Sustainability Rating -->
-      <h1 class="results__is-sustainable">THIS PIECE IS MADE SUSTAINABLY.</h1>
-
-      <p class="results__description">
-        Our algorithm determined this piece to be a
-        <span class="results__overall-rating">10/10 </span>in overall
-        sustainability and quality! Read below for more information on the
-        fabric, care, and tips to help make this piece last a lifetime. in
-        overall sustainability and quality! Here’s the breakdown:
-      </p>
+      <!-- <p class="inline-text-small-text">
+        The fashion industry is the second-biggest consumer of water and is responsible for around 10% of global carbon emissions. Many brands use greenwashing in their marketing to seem sustainable. We are here to decode greenwashing and promote transparency.
+      </p> -->
     </div>
 
-    <div class="features">
-      <div class="materials-container">
-        <img src="./images/cotton.png" alt="cotton" class="materials__img" />
-        <div>
-          <p class="materials__header">Organic Cotton</p>
-          <p class="materials__description">
-            This piece is mostly made of organic cotton.
-            <br /><br />
-            Organic cotton is better than regular cotton, as it avoids the use
-            of pesticides and harmful chemicals during its manufacturing
-            process.
-          </p>
+    <div class="half-flex">
+      <div class="half-flex-left">
+        <div class="flex-column-3">
+          <h6>Online</h6>
+          <div class="search-bar-flex">
+            <input
+              class="input-search"
+              type="text"
+              placeholder="www.example.com"
+            />
+            <button class="submit-home" type="submit">SEARCH</button>
+          </div>
         </div>
       </div>
-      <h1 class="technical-features__header">Sustainability Score</h1>
-      <div class="technical-features-container">
-        <div class="technical-features__card">
-          <p class="technical-features__title">Score</p>
-          <p class="technical-features__description">out of 10</p>
-          <p>FABRIC QUALITY</p>
-        </div>
-        <div class="technical-features__card">
-          <p class="technical-features__title">SCORE</p>
-          <p class="technical-features__description">out of 10</p>
-          <p>SUSTAINABILITY</p>
-        </div>
-        <div class="technical-features__card">
-          <p class="technical-features__title">SCORE</p>
-          <p class="technical-features__description">out of 10</p>
-          <p>ESTIMATED WASHES</p>
-        </div>
-      </div>
-      <h1 class="technical-features__header">Technical Features</h1>
-      <div class="technical-features-container">
-        <div class="technical-features__card">
-          <p class="technical-features__title">WASHING</p>
-          <p class="technical-features__description">description</p>
-        </div>
-        <div class="technical-features__card">
-          <p class="technical-features__title">WASHING</p>
-          <p class="technical-features__description">description</p>
-        </div>
-        <div class="technical-features__card">
-          <p class="technical-features__title">WASHING</p>
-          <p class="technical-features__description">description</p>
+      <div class="half-flex-right">
+        <div class="flex-column-3">
+          <h6>In-Person</h6>
+          <button class="main-btn">
+            SEARCH MANUALLY
+            <img
+              src="./images/Arrow_1.png"
+              alt="arrow pointing up right"
+              style="width: 20px"
+            />
+          </button>
         </div>
       </div>
     </div>
-    <!-- <div class="ratings-container">
-      <div class="card">
-        <p class="fabric-quality-rating">Backend: Fabric Quality Socre</p>
-        <p>out of 10</p>
-        <h4>Fabric Quality</h4>
-
-        <p class="fabric-quality-explanation">
-          Backend: Fabric Quality Explanaiton
-        </p>
-      </div>
-      <div class="card">
-        <p class="sustainability-rating">Backend: Sustainability Score</p>
-        <p>out of 10</p>
-        <h4>Fabric Quality</h4>
-
-        <p>Backend: Fabric Quality Explanaiton</p>
-      </div>
-      <div class="card">
-        <p class="number-of-washes">Backend: Estimated Washes #</p>
-        <p>out of 10</p>
-        <h4>Estimated Washes</h4>
-        <p class="number-of-washes-explanation">
-          Backend: Estimated Washes Explanaiton
-        </p>
-      </div>
-    </div> -->
-
-    <!-- This is populated by the recommended.js and recommended.json -->
-    <div class="recommended">
-      <div class="recommended-left">
-        <h1 class="recommended__header">
-          Recommended <br />
-          Products
-        </h1>
-        <p class="recommended__description">
-          If you like this piece, we found <br />
-          similar items that you will
-          <span style="font-weight: bold"> love. </span>
-        </p>
-      </div>
-
-      <div class="recommended-container">
-        <div class="recommended__card">
-          <img src="./images/cotton.png" alt="" style="height: 200px" />
-          <p>img</p>
-          <p>Item</p>
-          <p>Brand</p>
-          <p>Backend: rating</p>
-        </div>
-        <div class="recommended__card">
-          <img src="./images/cotton.png" alt="" style="height: 200px" />
-          <p>img</p>
-          <p>Item</p>
-          <p>Brand</p>
-          <p>Backend: rating</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- This is populated by the results -->
-    <div class="tips">
-      <div class="tips-heading-container">
-        <h2 class="tips__subheader">Slow Fashion Tips</h2>
-        <h1 class="tips__header">consider these tips before buying</h1>
-      </div>
-      <div class="tips-container">
-        <div class="tips__card">
-          <p class="tips__number">01</p>
-          <div class="tips__card-right">
-            <p class="tips__question">Will you wear it again?</p>
-            <div class="line"></div>
-            <p class="tips__description">
-              Think about whether you’re purchasing it because it’s a trend or
-              if it’s becuase you truly love the product.
-            </p>
-          </div>
-        </div>
-        <div class="tips__card">
-          <p class="tips__number">02</p>
-          <div class="tips__card-right">
-            <p class="tips__question">does it feel good to touch?</p>
-            <div class="line"></div>
-            <p class="tips__description">
-              Comfort over style, you won’t wear it if it doesn’t feel good on
-              your skin.
-            </p>
-          </div>
-        </div>
-
-        <div class="tips__card">
-          <p class="tips__number">03</p>
-          <div class="tips__card-right">
-            <p class="tips__question">How's the stitching?</p>
-            <div class="line"></div>
-            <p class="tips__description">
-              Try tugging at the seams to ensure that the stitching is neat and
-              tight.
-            </p>
-          </div>
-        </div>
-
-        <div class="tips__card">
-          <p class="tips__number">04</p>
-          <div class="tips__card-right">
-            <p class="tips__question">Do the patterns line up?</p>
-            <div class="line"></div>
-            <p class="tips__description">
-              If the patterns of the pockets, paneling, and other components
-              line up, the manufactuer probably values quality.
-            </p>
-          </div>
-        </div>
-
-        <div class="tips__card">
-          <p class="tips__number">05</p>
-          <div class="tips__card-right">
-            <p class="tips__question">can i maintain it?</p>
-            <div class="line"></div>
-            <p class="tips__description">
-              Be sure to check our care instructions to make sure you can commit
-              to the aftercare.
-            </p>
-          </div>
-        </div>
-      </div>
+    <div class="div-50">
+      <br />
     </div>
     <div class="footer">
       <div class="install">
@@ -273,6 +142,4 @@
       </nav>
     </div>
   </body>
-  <script src="./js/recommended.js" type="module"></script>
-  <script src="./js/results.js" type="module"></script>
 </html>

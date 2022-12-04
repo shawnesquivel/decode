@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Sustainable Clothing Manual Search</title>
+    <link rel="icon" href="./images/favicon.png" />
+
     <link rel="stylesheet" href="./css/results.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,8 +48,14 @@
         <form action="submit" class="home-right__form">
           <h1 class="home-right__title">Enter Information</h1>
           <div class="label-input-col">
-            <label for="" class="home-right__label"> Clothing Type </label>
-            <select name="cars" id="cars" class="home-right__input">
+            <label for="clothingtype" class="home-right__label">
+              Clothing Type
+            </label>
+            <select
+              name="clothingtype"
+              class="home-right__input"
+              id="clothing-type-input"
+            >
               <option class="home-right__option" value="shirt">shirt</option>
               <option value="coat" class="home-right__option">coat</option>
               <option value="shoes" class="home-right__option">shoes</option>
@@ -57,6 +65,7 @@
           <div class="label-input-col">
             <label for="" class="home-right__label">Brand</label>
             <input
+              id="brand-input"
               type="select"
               class="home-right__input"
               placeholder="Insert brand"
@@ -65,20 +74,23 @@
           <div class="label-input-col">
             <label for="" class="home-right__label">Materials</label>
             <input
+              id="materials-input"
               type="select"
               class="home-right__input"
-              placeholder="Insert paterials (separate with commas)"
+              placeholder="Insert materials (separate with commas)"
+              value="materials"
             />
           </div>
           <div class="label-input-col">
             <label for="" class="home-right__label">Weight (optional)</label>
             <input
+              id="weight-input"
               type="select"
               class="home-right__input"
               placeholder="Insert weight"
             />
           </div>
-          <button class="home__btn" type="submit">FINISH</button>
+          <button class="home__btn" type="button">FINISH</button>
         </form>
       </div>
     </div>
