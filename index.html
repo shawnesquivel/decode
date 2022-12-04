@@ -6,39 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sustainable Clothing Tool</title>
     <link rel="stylesheet" href="./css/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap");
+    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/eup4pch.css" />
   </head>
   <body>
-    <h1>LOGO</h1>
-    <p>Here's what we found:</p>
-    <div class="form">
-      <table>
-        <thead>
-          <th>Clothing Type</th>
-          <td><input class="clothingtype" type="text" /></td>
-        </thead>
-        <thead>
-          <th>Brand</th>
-          <td><input class="brand" type="text" /></td>
-        </thead>
-        <thead>
-          <th>Materials</th>
-          <td><input class="materials" type="text" /></td>
-        </thead>
-        <thead>
-          <th>Weight</th>
-          <td><input class="weight" type="text" /></td>
-        </thead>
-      </table>
-
-      <p>Does this look right?</p>
-      <div class="btn-container">
-        <button>
-          <a href="./results.html" target="_blank">Results Page</a>
-        </button>
-        <button class="submit-btn">Submit</button>
-        <button class="edit-btn">Edit</button>
+    <section class="chrome-extension">
+      <div class="grey-bottom-border">
+        <img src="./images/logo_171.87x212.41.png" alt="" class="logo-header" />
       </div>
-    </div>
+      <h1 class="title__bold">Here's what we found:</h1>
+      <div class="form">
+        <table class="extensions__table">
+          <thead class="extensions__thead">
+            <th class="extensions__th">Clothing Type</th>
+            <td class="extensions__td">
+              <input class="clothingtype" type="text" />
+            </td>
+          </thead>
+          <thead class="extensions__thead">
+            <th class="extensions__th">Brand</th>
+            <td class="extensions__td"><input class="brand" type="text" /></td>
+          </thead>
+          <thead class="extensions__thead">
+            <th class="extensions__th">Materials</th>
+            <td class="extensions__td">
+              <input class="materials" type="text" />
+            </td>
+          </thead>
+          <thead class="extensions__thead">
+            <th class="extensions__th th-weight">Weight</th>
+            <td class="extensions__td td-weight">
+              <input class="weight" type="text" />
+            </td>
+          </thead>
+        </table>
+
+        <p class="subheader__bold">Does this look right?</p>
+        <div class="btn-container">
+          <button class="btn-yes">
+            <a href="./results.html" target="_blank">YES</a>
+          </button>
+          <!-- <button class="submit-btn">Submit</button> -->
+          <button class="edit-btn">EDIT</button>
+        </div>
+      </div>
+      <div class="row-center">
+        <img
+          src="./images/header_logo_97x22.99.png"
+          alt=""
+          class="logo-footer"
+        />
+      </div>
+    </section>
   </body>
   <!-- JQuery Library -->
   <script type="text/javascript" src="js/jquery-1.10.2.js"></script>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>Results</title>
     <link rel="stylesheet" href="./css/results.css" />
   </head>
   <body>
@@ -22,7 +22,8 @@
 
     <div class="results">
       <h1>Results</h1>
-      <h2>This piece is sustainable!</h2>
+      <!-- Insert Data Based on Sustainability Rating -->
+      <h2 class="is-sustainable">This piece is sustainable!</h2>
       <p>
         Our algorithm determined this piece to be a 10/10 in overall
         sustainability and quality! Here’s the breakdown:
@@ -30,26 +31,39 @@
 
       <div class="ratings-container">
         <div class="card">
-          <p>Backend: Fabric Quality Socre</p>
+          <!-- Insert Data -->
+          <p class="fabric-quality-rating">Backend: Fabric Quality Socre</p>
           <p>out of 10</p>
           <h4>Fabric Quality</h4>
+          <!-- Insert Data -->
+
+          <p class="fabric-quality-explanation">
+            Backend: Fabric Quality Explanaiton
+          </p>
+        </div>
+        <div class="card">
+          <!-- Insert Data -->
+          <p class="sustainability-rating">Backend: Sustainability Score</p>
+          <p>out of 10</p>
+          <h4>Fabric Quality</h4>
+          <!-- Insert Data -->
+
           <p>Backend: Fabric Quality Explanaiton</p>
         </div>
         <div class="card">
-          <p>Backend: Sustainability Score</p>
-          <p>out of 10</p>
-          <h4>Fabric Quality</h4>
-          <p>Backend: Fabric Quality Explanaiton</p>
-        </div>
-        <div class="card">
-          <p>Backend: Estimated Washes #</p>
+          <!-- Insert Data -->
+
+          <p class="number-of-washes">Backend: Estimated Washes #</p>
           <p>out of 10</p>
           <h4>Estimated Washes</h4>
-          <p>Backend: Estimated Washes Explanaiton</p>
+          <!-- Insert Data -->
+          <p class="number-of-washes-explanation">
+            Backend: Estimated Washes Explanaiton
+          </p>
         </div>
       </div>
     </div>
-
+    <!-- This is populated by the results -->
     <div class="tips">
       <h1>Tips</h1>
       <div class="tips-right">
@@ -63,7 +77,7 @@
         </div>
       </div>
     </div>
-
+    <!-- This is populated by the recommended.js and recommended.json -->
     <div class="recommended">
       <p>We fouind other items that are high in quality</p>
       <div class="recommended-container">
@@ -121,4 +135,5 @@
     </nav>
   </body>
   <script src="./js/recommended.js" type="module"></script>
+  <script src="./js/results.js" type="module"></script>
 </html>

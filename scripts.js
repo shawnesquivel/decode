@@ -1,4 +1,5 @@
 // FORM INPUTS
+let resultsPageData;
 const clothingType = document.querySelector(".clothingtype");
 const brand = document.querySelector(".brand");
 const materials = document.querySelector(".materials");
@@ -6,7 +7,7 @@ const weight = document.querySelector(".weight");
 console.log(clothingType);
 
 // USER CLICKS YES: FORM SUBMIT
-const submitBtn = document.querySelector(".submit-btn");
+const submitBtn = document.querySelector(".btn-yes");
 
 submitBtn.addEventListener("click", async () => {
   console.log("Submit button was clicked");
@@ -62,14 +63,14 @@ $(document).ready(function () {
       method: "GET",
       success: function (data) {
         console.log("Server Response:", data);
-
+        localStorage.setItem("data", JSON.stringify(data));
         // Dummy Data
         // inputs.innerText = data[0].susRating;
         clothingType.setAttribute("placeholder", "shirt");
         brand.setAttribute("placeholder", "nike");
         materials.setAttribute("placeholder", "Polyester 15%, Cotton 85%");
         weight.setAttribute("placeholder", "1.5lbs");
-
+        resultsPageData = "hello world";
         // When Jay has server running, we should be setting the type, brand, materials, weight to the CALCULATOR INPUT
       },
       error: function (xhr) {
@@ -86,3 +87,7 @@ $(document).ready(function () {
 // Takes the CALCULATOR INPUT (the results of Jay's web scraper + user manual input)
 
 // Returns the results
+
+// export default resultsPageData;
+
+// export { resultsPageData };

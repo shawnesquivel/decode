@@ -10,3 +10,7 @@ data.shirts.forEach((shirt) => {
 data.coats.forEach((coat) => {
   console.log("Recommended coat:", coat);
 });
+
+// Grab the DOM elements
+
+// Change the DOM elements based on the data from scripts.js
