@@ -1,4 +1,37 @@
-const inputs = document.querySelector(".inputs");
+// FORM INPUTS
+const clothingType = document.querySelector(".clothingtype");
+const brand = document.querySelector(".brand");
+const materials = document.querySelector(".materials");
+const weight = document.querySelector(".weight");
+console.log(clothingType);
+
+// USER CLICKS YES: FORM SUBMIT
+const submitBtn = document.querySelector(".submit-btn");
+
+submitBtn.addEventListener("click", async () => {
+  console.log("Submit button was clicked");
+
+  const results = await fetch(
+    "https://638b8a0e7220b45d2292679a.mockapi.io/results"
+  )
+    .then((res) => {
+      console.log(res);
+      return res.json();
+    })
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err));
+});
+
+// USER CLICKS EDIT
+const editBtn = document.querySelector(".edit-btn");
+
+editBtn.addEventListener("click", (e) => {
+  console.log("Edit Button was Clicked!");
+  console.log("Type:", clothingType.value);
+  console.log("Brand:", brand.value);
+  console.log("Materials:", materials.value);
+  console.log("Weight:", weight.value);
+});
 
 // When the document is ready, use the jQuery
 $(document).ready(function () {
@@ -30,7 +63,14 @@ $(document).ready(function () {
       success: function (data) {
         console.log("Server Response:", data);
 
-        // To do: Using hte data
+        // Dummy Data
+        // inputs.innerText = data[0].susRating;
+        clothingType.setAttribute("placeholder", "shirt");
+        brand.setAttribute("placeholder", "nike");
+        materials.setAttribute("placeholder", "Polyester 15%, Cotton 85%");
+        weight.setAttribute("placeholder", "1.5lbs");
+
+        // When Jay has server running, we should be setting the type, brand, materials, weight to the CALCULATOR INPUT
       },
       error: function (xhr) {
         document.getElementById("title").innerHTML =
@@ -40,3 +80,9 @@ $(document).ready(function () {
     });
   });
 });
+
+// Create another function that activates when SUBMIT is clicked
+
+// Takes the CALCULATOR INPUT (the results of Jay's web scraper + user manual input)
+
+// Returns the results

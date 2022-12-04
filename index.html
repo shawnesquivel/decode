@@ -9,40 +9,40 @@
   </head>
   <body>
     <h1>LOGO</h1>
-    <p>Here's what we found</p>
+    <p>Here's what we found:</p>
     <div class="form">
       <table>
         <thead>
           <th>Clothing Type</th>
-          <td><input type="text" /></td>
+          <td><input class="clothingtype" type="text" /></td>
         </thead>
         <thead>
           <th>Brand</th>
-          <td><input type="text" /></td>
+          <td><input class="brand" type="text" /></td>
         </thead>
         <thead>
           <th>Materials</th>
-          <td><input type="text" /></td>
+          <td><input class="materials" type="text" /></td>
         </thead>
         <thead>
           <th>Weight</th>
-          <td><input type="text" /></td>
+          <td><input class="weight" type="text" /></td>
         </thead>
       </table>
 
       <p>Does this look right?</p>
       <div class="btn-container">
-        <button><a href="./results.html" target="_blank">Yes</a></button>
-        <button>Edit</button>
+        <button>
+          <a href="./results.html" target="_blank">Results Page</a>
+        </button>
+        <button class="submit-btn">Submit</button>
+        <button class="edit-btn">Edit</button>
       </div>
     </div>
-
-    <div class="inputs">
-      <h1>Web Scrape</h1>
-    </div>
   </body>
+  <!-- JQuery Library -->
   <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-
+  <!-- Button Logic -->
+  <!-- Server Call -->
   <script src="./scripts.js"></script>
-  <!-- <script src="./fetch.js"></script> -->
 </html>

@@ -24,4 +24,33 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 25%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.features__card {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgreen;
+  padding: 2rem;
 }
