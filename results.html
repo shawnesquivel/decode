@@ -22,12 +22,10 @@
       <img src="./images/header_logo_97x22.99.png" alt="" class="logo-header" />
       <div class="navbar__right">
         <ul class="navbar__links">
-          <li><a href="" class="link">home</a></li>
-          <li><a href="" class="link">manual search</a></li>
-          <li><a href="" class="link">how this works</a></li>
-          <li class="link-bubble">
-            <a href="" class="link">install chrome extension</a>
-          </li>
+          <li><a href="./home.html" class="link">home</a></li>
+          <li><a href="./manualform.html" class="link">manual search</a></li>
+          <li><a href="./about.html" class="link">how this works</a></li>
+          <li class="link-bubble">install chrome extension</li>
         </ul>
       </div>
     </nav>
@@ -48,78 +46,104 @@
     </div>
 
     <div class="features">
-      <img src="./" alt="" />
+      <div class="materials-container">
+        <img src="./images/cotton.png" alt="cotton" class="materials__img" />
+        <div>
+          <p class="materials__header">Organic Cotton</p>
+          <p class="materials__description">
+            This piece is mostly made of organic cotton.
+            <br /><br />
+            Organic cotton is better than regular cotton, as it avoids the use
+            of pesticides and harmful chemicals during its manufacturing
+            process.
+          </p>
+        </div>
+      </div>
+      <h1 class="technical-features__header">Sustainability Score</h1>
+      <div class="technical-features-container">
+        <div class="technical-features__card">
+          <p class="technical-features__title">Score</p>
+          <p class="technical-features__description">out of 10</p>
+          <p>FABRIC QUALITY</p>
+        </div>
+        <div class="technical-features__card">
+          <p class="technical-features__title">SCORE</p>
+          <p class="technical-features__description">out of 10</p>
+          <p>SUSTAINABILITY</p>
+        </div>
+        <div class="technical-features__card">
+          <p class="technical-features__title">SCORE</p>
+          <p class="technical-features__description">out of 10</p>
+          <p>ESTIMATED WASHES</p>
+        </div>
+      </div>
+      <h1 class="technical-features__header">Technical Features</h1>
+      <div class="technical-features-container">
+        <div class="technical-features__card">
+          <p class="technical-features__title">WASHING</p>
+          <p class="technical-features__description">description</p>
+        </div>
+        <div class="technical-features__card">
+          <p class="technical-features__title">WASHING</p>
+          <p class="technical-features__description">description</p>
+        </div>
+        <div class="technical-features__card">
+          <p class="technical-features__title">WASHING</p>
+          <p class="technical-features__description">description</p>
+        </div>
+      </div>
     </div>
-    <div class="ratings-container">
+    <!-- <div class="ratings-container">
       <div class="card">
-        <!-- Insert Data -->
         <p class="fabric-quality-rating">Backend: Fabric Quality Socre</p>
         <p>out of 10</p>
         <h4>Fabric Quality</h4>
-        <!-- Insert Data -->
 
         <p class="fabric-quality-explanation">
           Backend: Fabric Quality Explanaiton
         </p>
       </div>
       <div class="card">
-        <!-- Insert Data -->
         <p class="sustainability-rating">Backend: Sustainability Score</p>
         <p>out of 10</p>
         <h4>Fabric Quality</h4>
-        <!-- Insert Data -->
 
         <p>Backend: Fabric Quality Explanaiton</p>
       </div>
       <div class="card">
-        <!-- Insert Data -->
-
         <p class="number-of-washes">Backend: Estimated Washes #</p>
         <p>out of 10</p>
         <h4>Estimated Washes</h4>
-        <!-- Insert Data -->
         <p class="number-of-washes-explanation">
           Backend: Estimated Washes Explanaiton
         </p>
       </div>
-    </div>
-    <!-- This is populated by the results -->
-    <div class="tips">
-      <h1>Tips</h1>
-      <div class="tips-right">
-        <div class="tip">
-          <p>Tip</p>
-          <p>Explanation</p>
-        </div>
-        <div class="tip">
-          <p>Tip</p>
-          <p>Explanation</p>
-        </div>
-      </div>
-    </div>
+    </div> -->
+
     <!-- This is populated by the recommended.js and recommended.json -->
     <div class="recommended">
-      <p>We fouind other items that are high in quality</p>
+      <div class="recommended-left">
+        <h1 class="recommended__header">
+          Recommended <br />
+          Products
+        </h1>
+        <p class="recommended__description">
+          If you like this piece, we found <br />
+          similar items that you will
+          <span style="font-weight: bold"> love. </span>
+        </p>
+      </div>
+
       <div class="recommended-container">
         <div class="recommended__card">
+          <img src="./images/cotton.png" alt="" style="height: 200px" />
           <p>img</p>
           <p>Item</p>
           <p>Brand</p>
           <p>Backend: rating</p>
         </div>
         <div class="recommended__card">
-          <p>img</p>
-          <p>Item</p>
-          <p>Brand</p>
-          <p>Backend: rating</p>
-        </div>
-        <div class="recommended__card">
-          <p>img</p>
-          <p>Item</p>
-          <p>Brand</p>
-          <p>Backend: rating</p>
-        </div>
-        <div class="recommended__card">
+          <img src="./images/cotton.png" alt="" style="height: 200px" />
           <p>img</p>
           <p>Item</p>
           <p>Brand</p>
@@ -127,32 +151,127 @@
         </div>
       </div>
     </div>
-    <nav class="bottom-nav">
-      <div class="bottom-nav__left">
-        <p>Logo</p>
-        <p>tagline</p>
-      </div>
 
-      <div class="bottom-nav__right">
-        <div class="navigation">
-          <p>Navigation</p>
-          <ul class="ul-col">
-            <li><a href="">Link</a></li>
-            <li><a href="">Link</a></li>
-            <li><a href="">Link</a></li>
-          </ul>
+    <!-- This is populated by the results -->
+    <div class="tips">
+      <div class="tips-heading-container">
+        <h2 class="tips__subheader">Slow Fashion Tips</h2>
+        <h1 class="tips__header">consider these tips before buying</h1>
+      </div>
+      <div class="tips-container">
+        <div class="tips__card">
+          <p class="tips__number">01</p>
+          <div class="tips__card-right">
+            <p class="tips__question">Will you wear it again?</p>
+            <div class="line"></div>
+            <p class="tips__description">
+              Think about whether you’re purchasing it because it’s a trend or
+              if it’s becuase you truly love the product.
+            </p>
+          </div>
+        </div>
+        <div class="tips__card">
+          <p class="tips__number">02</p>
+          <div class="tips__card-right">
+            <p class="tips__question">does it feel good to touch?</p>
+            <div class="line"></div>
+            <p class="tips__description">
+              Comfort over style, you won’t wear it if it doesn’t feel good on
+              your skin.
+            </p>
+          </div>
         </div>
 
-        <div class="find-us">
-          <p>Find Us</p>
-          <ul class="ul-col">
-            <li><a href="">Link</a></li>
-            <li><a href="">Link</a></li>
-            <li><a href="">Link</a></li>
-          </ul>
+        <div class="tips__card">
+          <p class="tips__number">03</p>
+          <div class="tips__card-right">
+            <p class="tips__question">How's the stitching?</p>
+            <div class="line"></div>
+            <p class="tips__description">
+              Try tugging at the seams to ensure that the stitching is neat and
+              tight.
+            </p>
+          </div>
+        </div>
+
+        <div class="tips__card">
+          <p class="tips__number">04</p>
+          <div class="tips__card-right">
+            <p class="tips__question">Do the patterns line up?</p>
+            <div class="line"></div>
+            <p class="tips__description">
+              If the patterns of the pockets, paneling, and other components
+              line up, the manufactuer probably values quality.
+            </p>
+          </div>
+        </div>
+
+        <div class="tips__card">
+          <p class="tips__number">05</p>
+          <div class="tips__card-right">
+            <p class="tips__question">can i maintain it?</p>
+            <div class="line"></div>
+            <p class="tips__description">
+              Be sure to check our care instructions to make sure you can commit
+              to the aftercare.
+            </p>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
+    <div class="footer">
+      <div class="install">
+        <h2 class="install__subheader">Install our chrome extension</h2>
+        <h1 class="install__header">
+          decode
+          <span>
+            <img src="./images/fabric.png" alt="" class="install__img" />
+          </span>
+          before you shop.
+        </h1>
+        <p class="install__description">
+          Before adding to your cart, use our extension to learn about the
+          materials and care information for your clothing of choice. Choose
+          pieces that will spend a lifetime in your closet instead of a
+          landfill.
+        </p>
+        <button class="install__btn">
+          Install the Chrome Extension
+          <img
+            src="./images/up-right-arrow.png"
+            alt="arrow pointing up right"
+            style="width: 20px"
+          />
+        </button>
+      </div>
+      <nav class="footer-nav">
+        <div class="footer-top">
+          <div class="footer-nav__left">
+            <img
+              src="./images/footer_logo_97x22.99.png"
+              alt="decode logo footer"
+              class="footer__logo"
+            />
+          </div>
+
+          <div class="footer-nav__right">
+            <div class="navigation">
+              <ul class="footer-links">
+                <li>home</li>
+                <li>about</li>
+                <li>manual search</li>
+                <li class="footer-link-bubble">install chrome extension</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="footer-links-left">
+          <li>&copy; 2022 decode</li>
+          <li>privacy policy</li>
+          <li>terms of service</li>
+        </ul>
+      </nav>
+    </div>
   </body>
   <script src="./js/recommended.js" type="module"></script>
   <script src="./js/results.js" type="module"></script>

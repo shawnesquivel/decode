@@ -4,41 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manual Form</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/results.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap");
+    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/eup4pch.css" />
   </head>
   <body>
-    <nav>This is wehre th etop nav bar goes</nav>
+    <nav class="navbar">
+      <img src="./images/header_logo_97x22.99.png" alt="" class="logo-header" />
+      <div class="navbar__right">
+        <ul class="navbar__links">
+          <li><a href="./home.html" class="link">home</a></li>
+          <li><a href="./manualform.html" class="link">manual search</a></li>
+          <li><a href="./about.html" class="link">how this works</a></li>
+          <li class="link-bubble">install chrome extension</li>
+        </ul>
+      </div>
+    </nav>
 
-    <div>
-      <p>Enter info</p>
-      <p>description</p>
-
-      <form action="" class="form">
-        <div class="flex-col">
-          <label for="type">Label</label>
-          <input type="text" for="type" />
-        </div>
-        <div class="flex-col">
-          <label for="type">Label</label>
-          <input type="text" for="type" />
-        </div>
-        <div class="flex-col">
-          <label for="type">Label</label>
-          <input type="text" for="type" />
-        </div>
-        <div class="flex-col">
-          <label for="type">Label</label>
-          <input type="text" for="type" />
-        </div>
-        <div class="flex-col">
-          <label for="type">Label</label>
-          <input type="text" for="type" />
-        </div>
-
-        <button type="submit">
-          <a href="./results.html"> Submit Form (navigate to results page) </a>
-        </button>
-      </form>
+    <div class="home">
+      <div class="home-left">
+        <h1 class="home-left__title">
+          Start <br />
+          <img src="./images/fabric.png" alt="" class="home-left__img" />
+          Decoding
+        </h1>
+        <p class="home-left__description">
+          Please insert as much information as possible to ensure that results
+          are as accurate as possible.
+        </p>
+      </div>
+      <div class="home-right">
+        <form action="submit" class="home-right__form">
+          <h1 class="home-right__title">Enter Information</h1>
+          <div class="label-input-col">
+            <label for="" class="home-right__label"> Clothing Type </label>
+            <select name="cars" id="cars" class="home-right__input">
+              <option class="home-right__option" value="shirt">shirt</option>
+              <option value="coat" class="home-right__option">coat</option>
+              <option value="shoes" class="home-right__option">shoes</option>
+              <option value="jacket" class="home-right__option">jacket</option>
+            </select>
+          </div>
+          <div class="label-input-col">
+            <label for="" class="home-right__label">Brand</label>
+            <input
+              type="select"
+              class="home-right__input"
+              placeholder="Insert brand"
+            />
+          </div>
+          <div class="label-input-col">
+            <label for="" class="home-right__label">Materials</label>
+            <input
+              type="select"
+              class="home-right__input"
+              placeholder="Insert paterials (separate with commas)"
+            />
+          </div>
+          <div class="label-input-col">
+            <label for="" class="home-right__label">Weight (optional)</label>
+            <input
+              type="select"
+              class="home-right__input"
+              placeholder="Insert weight"
+            />
+          </div>
+          <button class="home__btn" type="submit">FINISH</button>
+        </form>
+      </div>
     </div>
   </body>
+  <script src="./js/recommended.js" type="module"></script>
+  <script src="./js/results.js" type="module"></script>
+  <script src="/scripts.js" type="module"></script>
 </html>

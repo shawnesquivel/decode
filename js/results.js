@@ -1,4 +1,10 @@
 // import { resultsPageData } from "../scripts.js";
 
 // console.log(resultsPageData
-console.log(JSON.parse(localStorage.getItem("data")));
+const backendData = JSON.parse(localStorage.getItem("data"));
+
+if (backendData) {
+  console.log("backend data", backendData);
+} else {
+  console.log("no backend data yet");
+}

@@ -1,0 +1,37 @@
+{
+  "coats": [
+    {
+      "type": "coat",
+      "fabricQuality": 8,
+      "sutainabilityRating": 9,
+      "numberOfWashes": 100,
+      "materialArr": ["cotton", "wool", "cashmere"],
+      "brand": "Banana Republic",
+      "url": "https://bananarepublic.gapcanada.ca/browse/product.do?pid=477103013&cid=1188276&pcid=1016720&vid=1#pdp-page-content",
+      "imageURL": "https://bananarepublic.gapcanada.ca/webcontent/0052/295/414/cn52295414.jpg"
+    },
+    {
+      "type": "coat",
+      "fabricQuality": 8,
+      "sutainabilityRating": 9,
+      "numberOfWashes": 100,
+      "materialArr": ["cotton", "wool", "cashmere"],
+      "brand": "Banana Republic",
+      "url": "https://bananarepublic.gapcanada.ca/browse/product.do?pid=477103013&cid=1188276&pcid=1016720&vid=1#pdp-page-content",
+      "imageURL": "https://bananarepublic.gapcanada.ca/webcontent/0052/295/414/cn52295414.jpg"
+    }
+  ],
+
+  "shirts": [
+    {
+      "type": "shirt",
+      "fabricQuality": 8,
+      "sutainabilityRating": 9,
+      "numberOfWashes": 100,
+      "materialArr": ["cotton"],
+      "brand": "Nike",
+      "url": "https://bananarepublic.gapcanada.ca/browse/product.do?pid=477103013&cid=1188276&pcid=1016720&vid=1#pdp-page-content",
+      "imageURL": "https://bananarepublic.gapcanada.ca/webcontent/0052/295/414/cn52295414.jpg"
+    }
+  ]
+}
