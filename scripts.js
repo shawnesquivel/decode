@@ -23,6 +23,11 @@ if (pageTitle === "Sustainable Clothing Tool") {
     )
       .then((res) => {
         console.log(res);
+        clothingType.setAttribute("placeholder", "hoodie");
+        brand.setAttribute("placeholder", "Everlane");
+        materials.setAttribute("placeholder", "100% Organic Cotton");
+        weight.setAttribute("placeholder", "0.8lbs");
+
         return res.json();
       })
       .then((data) => console.log(data))
@@ -73,10 +78,11 @@ if (pageTitle === "Sustainable Clothing Tool") {
             localStorage.setItem("data", JSON.stringify(data));
             // Dummy Data
             // inputs.innerText = data[0].susRating;
-            clothingType.setAttribute("placeholder", "shirt");
-            brand.setAttribute("placeholder", "nike");
-            materials.setAttribute("placeholder", "Polyester 15%, Cotton 85%");
-            weight.setAttribute("placeholder", "1.5lbs");
+            clothingType.setAttribute("placeholder", "Hoodie");
+            brand.setAttribute("placeholder", "Everlane");
+            materials.setAttribute("placeholder", "100% Organic Cotton");
+            weight.setAttribute("placeholder", "0.8lbs");
+
             resultsPageData = "hello world";
             // When Jay has server running, we should be setting the type, brand, materials, weight to the CALCULATOR INPUT
           },
