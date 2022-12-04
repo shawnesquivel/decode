@@ -6,61 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Results</title>
     <link rel="stylesheet" href="./css/results.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap");
+    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/eup4pch.css" />
   </head>
   <body>
     <nav class="navbar">
-      <p>LOGO</p>
+      <img src="./images/header_logo_97x22.99.png" alt="" class="logo-header" />
       <div class="navbar__right">
         <ul class="navbar__links">
-          <li><a href="" class="link">Home</a></li>
-          <li><a href="" class="link">Manual Search</a></li>
-          <li><a href="" class="link">Chrome Extension</a></li>
-          <li><a href="" class="link">How This Works</a></li>
+          <li><a href="" class="link">home</a></li>
+          <li><a href="" class="link">manual search</a></li>
+          <li><a href="" class="link">how this works</a></li>
+          <li class="link-bubble">
+            <a href="" class="link">install chrome extension</a>
+          </li>
         </ul>
       </div>
     </nav>
 
     <div class="results">
-      <h1>Results</h1>
+      <h2 class="results__heading">Results</h2>
+
       <!-- Insert Data Based on Sustainability Rating -->
-      <h2 class="is-sustainable">This piece is sustainable!</h2>
-      <p>
-        Our algorithm determined this piece to be a 10/10 in overall
-        sustainability and quality! Here’s the breakdown:
+      <h1 class="results__is-sustainable">THIS PIECE IS MADE SUSTAINABLY.</h1>
+
+      <p class="results__description">
+        Our algorithm determined this piece to be a
+        <span class="results__overall-rating">10/10 </span>in overall
+        sustainability and quality! Read below for more information on the
+        fabric, care, and tips to help make this piece last a lifetime. in
+        overall sustainability and quality! Here’s the breakdown:
       </p>
+    </div>
 
-      <div class="ratings-container">
-        <div class="card">
-          <!-- Insert Data -->
-          <p class="fabric-quality-rating">Backend: Fabric Quality Socre</p>
-          <p>out of 10</p>
-          <h4>Fabric Quality</h4>
-          <!-- Insert Data -->
+    <div class="features">
+      <img src="./" alt="" />
+    </div>
+    <div class="ratings-container">
+      <div class="card">
+        <!-- Insert Data -->
+        <p class="fabric-quality-rating">Backend: Fabric Quality Socre</p>
+        <p>out of 10</p>
+        <h4>Fabric Quality</h4>
+        <!-- Insert Data -->
 
-          <p class="fabric-quality-explanation">
-            Backend: Fabric Quality Explanaiton
-          </p>
-        </div>
-        <div class="card">
-          <!-- Insert Data -->
-          <p class="sustainability-rating">Backend: Sustainability Score</p>
-          <p>out of 10</p>
-          <h4>Fabric Quality</h4>
-          <!-- Insert Data -->
+        <p class="fabric-quality-explanation">
+          Backend: Fabric Quality Explanaiton
+        </p>
+      </div>
+      <div class="card">
+        <!-- Insert Data -->
+        <p class="sustainability-rating">Backend: Sustainability Score</p>
+        <p>out of 10</p>
+        <h4>Fabric Quality</h4>
+        <!-- Insert Data -->
 
-          <p>Backend: Fabric Quality Explanaiton</p>
-        </div>
-        <div class="card">
-          <!-- Insert Data -->
+        <p>Backend: Fabric Quality Explanaiton</p>
+      </div>
+      <div class="card">
+        <!-- Insert Data -->
 
-          <p class="number-of-washes">Backend: Estimated Washes #</p>
-          <p>out of 10</p>
-          <h4>Estimated Washes</h4>
-          <!-- Insert Data -->
-          <p class="number-of-washes-explanation">
-            Backend: Estimated Washes Explanaiton
-          </p>
-        </div>
+        <p class="number-of-washes">Backend: Estimated Washes #</p>
+        <p>out of 10</p>
+        <h4>Estimated Washes</h4>
+        <!-- Insert Data -->
+        <p class="number-of-washes-explanation">
+          Backend: Estimated Washes Explanaiton
+        </p>
       </div>
     </div>
     <!-- This is populated by the results -->

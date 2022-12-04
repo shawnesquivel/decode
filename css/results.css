@@ -3,13 +3,37 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: #fdfdfa;
+  font-family: "Be Vietnam Pro";
+  --black: #141817;
+  --white: #ffffff;
+  --green: #16503e;
+  color: var(--black);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+
+.logo-header {
+  width: 97px;
+  height: 22.99px;
 }
 
 .navbar {
-  margin: 1rem 3rem;
+  padding: 1rem 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--black);
 }
 
 .navbar__right {
@@ -23,7 +47,7 @@ body {
   justify-content: center;
   align-items: center;
   list-style: none;
-  gap: 22px;
+  gap: 2rem;
 }
 
 .link {
@@ -31,14 +55,49 @@ body {
   text-decoration: none;
 }
 
+.link-bubble {
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 56px;
+}
+
 .link:visited {
   color: black;
   text-decoration: none;
 }
 
-/* Results */
+/* RESULTS  */
 .results {
-  margin: 1rem 3rem;
+  margin: 106px 3rem 0;
+}
+
+.results__heading {
+  font-family: "Monarcha";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 41px;
+  color: #141817;
+}
+
+.results__is-sustainable {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 110px;
+  line-height: 120px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #141817;
+  margin-bottom: 2rem;
+}
+
+.results__overall-rating {
+  font-weight: bold;
+}
+
+.results__description {
+  margin-bottom: 128px;
 }
 
 .ratings-container {
