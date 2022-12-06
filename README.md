@@ -1,9 +1,9 @@
 # sustain-hacks
-This is our submission to [Sustain Hacks 2022](https://organize.mlh.io/participants/events/8826-sustainhacks)! 
+This is our submission to [Sustain Hacks 2022](https://organize.mlh.io/participants/events/8826-sustainhacks). This is just the chrome extension, simply add to your chrome to use it.
 
-[YouTube Demo](https://www.youtube.com/watch?v=ZcLToAFm-wI)
-[Devpost](https://devpost.com/software/decode-z8ecsg)
-[Backend code](https://github.com/jsqvl/sustain-hacks-backend)
+- [YouTube Demo](https://www.youtube.com/watch?v=ZcLToAFm-wI)
+- [Devpost](https://devpost.com/software/decode-z8ecsg)
+- [Backend](https://github.com/jsqvl/sustain-hacks-backend)
 
 ## Fight Back Against Fast Fashion
 
@@ -32,8 +32,23 @@ There was also extensive secondary research done on the sustainability, fabric q
 
 Between the two coders, we split responsibilities into frontend and backend. For the frontend, we started by getting the Chrome Extension live, managing the user workflow, and styling the website. The backend was setup with Python/Flask. Then, functions were made using the secondary research to generate the results.
 
+## How to upload to Chrome Extensions
+1. Download the repository by clicking the green button <Code> and downloading the zip file to your PC.
+![image](https://user-images.githubusercontent.com/94336773/205824559-44b6eebb-7457-4c4b-a541-18170953f509.png)
+2. In the top right corner of your Google Chrome, click the Extensions Icon and click Manage Extensions. If you can't find this button, just type: chrome://extensions/ into the address field.
+![image](https://user-images.githubusercontent.com/94336773/205824846-9e4dd48f-7c4a-44ea-9e81-5745bfe58589.png)
+3. Click Load unpacked 
+![image](https://user-images.githubusercontent.com/94336773/205824981-d6968d6f-e3b2-4b2f-a29d-820cb1156fdd.png)
+4. Select the entire folder you just downloaded from GitHub.
+5. It should appear as following. Make sure the blue button is toggled.
+![image](https://user-images.githubusercontent.com/94336773/205825028-7a9b144b-7a76-40f8-9cf5-4c4753ea2e8a.png)
+6. The Chrome extension will now be in your Extensions. Click the Pin to place it on your pinned extensions bar, so you can easily use it when you're on a product page.
+![image](https://user-images.githubusercontent.com/94336773/205825210-b9f1025c-5d47-4b21-9a91-bbacd4859da1.png)
+7. You're all set to go! Simply click the extension to get sustainability ratings on your clothes instantly.
+![image](https://user-images.githubusercontent.com/94336773/205825286-12b117b0-f76c-4165-b35d-8d506c5f5968.png)
+
 
 # Contributors
 - github.com/shawnesquivel frontend
-- github.com/jqvl backend (check out his repo) [Backend code](https://github.com/jsqvl/sustain-hacks-backend)
+- github.com/jqvl backend (check out his repo)
 
