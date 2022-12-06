@@ -1,5 +1,5 @@
-# sustain-hacks
-This is our submission to [Sustain Hacks 2022](https://organize.mlh.io/participants/events/8826-sustainhacks). This is just the chrome extension, simply add to your chrome to use it.
+# decode - we decode greenwashing on clothing labels so you can find clothes that look and feel good 
+This is our submission to [Sustain Hacks 2022](https://organize.mlh.io/participants/events/8826-sustainhacks). To install our extension, please see the [installation instructions](#installation-instructions). Note that the webscraping service may not be live if the backend is being updated. 
 
 - [YouTube Demo](https://www.youtube.com/watch?v=ZcLToAFm-wI)
 - [Devpost](https://devpost.com/software/decode-z8ecsg)
@@ -32,7 +32,7 @@ There was also extensive secondary research done on the sustainability, fabric q
 
 Between the two coders, we split responsibilities into frontend and backend. For the frontend, we started by getting the Chrome Extension live, managing the user workflow, and styling the website. The backend was setup with Python/Flask. Then, functions were made using the secondary research to generate the results.
 
-## How to upload to Chrome Extensions
+## Installation Instructions
 1. Download the repository by clicking the green button <Code> and downloading the zip file to your PC.
 ![image](https://user-images.githubusercontent.com/94336773/205824559-44b6eebb-7457-4c4b-a541-18170953f509.png)
 2. In the top right corner of your Google Chrome, click the Extensions Icon and click Manage Extensions. If you can't find this button, just type: chrome://extensions/ into the address field.
