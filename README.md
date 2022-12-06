@@ -1,4 +1,6 @@
-# decode - we decode greenwashing on clothing labels so you can find clothes that look and feel good 
+# decode (SustainHacks 2022)
+We decode greenwashing on clothing labels so you can find clothes that look and feel good.
+
 This is our submission to [Sustain Hacks 2022](https://organize.mlh.io/participants/events/8826-sustainhacks). To install our extension, please see the [installation instructions](#installation-instructions). Note that the webscraping service may not be live if the backend is being updated. 
 
 - [YouTube Demo](https://www.youtube.com/watch?v=ZcLToAFm-wI)
